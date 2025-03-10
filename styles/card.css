@@ -1,0 +1,163 @@
+.conteudo__agendamento {
+    font-weight: 700;
+    padding: 0 1em 0 1em;
+    color: var(--cinza);
+}
+
+.card {
+    background: var(--branco);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+.card__cliente {
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.card__agenda {
+    display: grid;
+    grid-template-columns: 15% 75% 0%;
+    align-items: center;
+}
+
+
+.card__titulo {
+    color: var(--cinza);
+    font-weight: 700;
+    padding-bottom: 0.5em;
+}
+
+.card__texto {
+    color: var(--cinza-claro);
+    padding-left: 4.5em;
+    background: url('../assets/Camera.svg') no-repeat;
+    background-position: 3em;
+    margin-bottom: 1em;
+}
+
+.card__horario {
+    border-top: 1px solid var(--cinza-claro);
+    padding-top: 1em;
+}
+
+.card__botao {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 1em 0.5em 0 0.5em;
+    font-size: 0.875em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.botao__link {
+    background-color: var(--cor-botao);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.botao__link-secundario {
+    color: var(--cinza);
+    text-decoration: none;
+    padding: 1em;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 0.5em;
+}
+
+.card__texto-secundario {
+    color: var(--cinza-claro);
+    padding-left: 4.5em;
+    background: url('../assets/pin.svg') no-repeat;
+    background-position: 3em;
+    margin-bottom: 1em;
+}
+
+.botao__link-terciario {
+    background-color: var(--botao-azul);
+    color: var(--branco);
+    text-decoration: none;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .conteudo__agendamento {
+        padding: 0 2em 0 2em;
+    }
+
+    .card__cliente {
+        width: 5vw;
+    }
+
+    .card {
+        display: inline-block;
+        width: 40vw;
+    }
+
+    .btn {
+        right: 2%;
+    }
+
+    .botao__link:hover {
+        background-color: var(--cinza-claro);
+        transition-duration: 0.5s;
+    }
+
+    .botao__link:active {
+        background-color: var(--botao-azul);
+        transition-duration: 0.1s;
+    }
+
+    .botao__link-secundario:hover {
+        background-color: var(--cinza-claro);
+        color: var(--branco);
+        transition-duration: 0.5s;
+    }
+
+    .botao__link-secundario:active {
+        background-color: var(--botao-azul);
+        color: var(--branco);
+        transition-duration: 0.1s;
+    }
+
+    .botao__link-terciario:hover {
+        background-color: var(--cinza-claro);
+        transition-duration: 0.5s;
+    }
+
+    .botao__link-terciario:active {
+        background-color: var(--cor-botao);
+        transition-duration: 0.1s;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+
+    .card__titulo {
+        font-size: 1.125em;
+        padding-left: 0.5em;
+    }
+
+    .card__cliente {
+        width: 3vw;
+    }
+
+    .card__texto, .card__texto-secundario {
+        padding-left: 4em;
+        background-position: 2.5em;
+    }
+
+    .card {
+        width: 22vw;
+        margin: 1em;
+    }
+
+}

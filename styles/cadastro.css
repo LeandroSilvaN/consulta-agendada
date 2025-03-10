@@ -1,0 +1,77 @@
+.cadastro {
+    display: none;
+}
+@media screen and (min-width:1366px) {
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1em;
+}
+.cadastro__titulo {
+    color: var(--cinza);
+    font-size: 1.125em;
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.cadastro__entrada {
+    padding: 0.5em;
+    margin: 0 auto 1em 1em;
+    text-align: left;
+    border-radius: 0.5em;
+    color: var(--cinza);
+}
+
+.cadastro__paciente {
+    padding: 1em 15em 1em 0.4em;
+}
+
+.cadastro__entrada:hover, .cadastro__selecionar:hover, .cadastro__hora:hover {
+    border: 2px solid var(--botao-azul);
+}
+
+.cadastro__texto {
+    color: var(--cinza);
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.cadastro__selecionar, .cadastro__hora {
+    padding: 0.5em;
+    margin: 0 auto 1em 1em;
+    border-radius: 0.5em;
+}
+
+.cadastro__botao {
+    padding: 1em;
+    margin: 0 auto 0 3em;
+    background-color: var(--botao-azul);
+    color: var(--branco);
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+
+.cadastro__entrada, .cadastro__hora, .cadastro__selecionar {
+    border: 2px solid var(--cinza-claro);
+}
+
+.cadastro__botao:hover {
+    border: 1px solid var(--botao-azul);
+    background-color: var(--cinza-claro);
+    transition-duration: 0.5s;
+}
+
+.cadastro__botao:active {
+    color: var(--botao-azul);
+    background-color: var(--branco);
+    border: 1px solid var(--botao-azul);
+    transition-duration: 0.1s;
+}
+
+.texto__observacao {
+    padding: 1em 15em 8em 0.5em;
+}
+
+}
